@@ -285,7 +285,7 @@ Les données manipulées sont des données bancaires confidentielles. **Aucune d
 
 **Safaa OUARD** : élève-ingénieure en 3ᵉ année ISIC (Ingénierie des Systèmes d'Information et de Communication), École Nationale des Sciences Appliquées d'El Jadida
 
-📧 [email] · 🔗 [LinkedIn] · 💻 [GitHub]
+📧 ouardsafaa22@gmail.com · 🔗 www.linkedin.com/in/safaa-ouard-a7696a353 · 💻 safaaOUARD
 
 **Encadrement en entreprise (BCP) :** Mme Siham BENLARABI (Gestionnaire Risque Senior) et M. Mohammed CHAARA
 **Jury (ENSA El Jadida) :** Pr. Mohamed HANINE, Pr. Khalid EL MOUTAOUAKIL
