@@ -1,0 +1,34 @@
+.rating-pays-chart {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+  padding: 20px;
+}
+
+.rating-pays-chart__header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.rating-pays-chart__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  color: #6b7280;
+  font-size: 14px;
+  text-align: center;
+}
+.rating-pays-chart__tooltip {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.rating-pays-chart__tooltip-title { font-weight: 600; margin-bottom: 4px; }
+.rating-pays-chart__tooltip-row { display: flex; align-items: center; gap: 6px; }
+.rating-pays-chart__tooltip-swatch { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.rating-pays-chart__tooltip-pays { margin-top: 6px; color: #6B7280; font-size: 12px; }

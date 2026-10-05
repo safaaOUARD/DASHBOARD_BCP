@@ -1,0 +1,127 @@
+.dashboard-card {
+  --bcp-blue: #1b4f72;
+  --bcp-orange: #e67e22;
+  --bcp-gray-border: #e5e7eb;
+  --bcp-text: #1f2937;
+  --bcp-text-muted: #6b7280;
+
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--bcp-gray-border);
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+  padding: 24px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+  transform: translateY(-2px);
+}
+
+.dashboard-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.dashboard-card__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--bcp-text);
+}
+
+.dashboard-card__subtitle {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--bcp-blue);
+  background: rgba(27, 79, 114, 0.08);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.dashboard-card__date {
+  font-size: 12px;
+  color: var(--bcp-text-muted);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.dashboard-card__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.dashboard-card__chart {
+  position: relative;
+}
+
+.dashboard-card__total {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.dashboard-card__total-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bcp-text);
+  line-height: 1.1;
+}
+
+.dashboard-card__total-label {
+  display: block;
+  font-size: 11px;
+  color: var(--bcp-text-muted);
+}
+
+.dashboard-card__legend {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-card__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--bcp-text);
+}
+
+.dashboard-card__legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dashboard-card__legend-name {
+  flex: 1;
+}
+
+.dashboard-card__legend-value {
+  font-weight: 600;
+  color: var(--bcp-text-muted);
+}
+
+.dashboard-card__empty {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--bcp-text-muted);
+}

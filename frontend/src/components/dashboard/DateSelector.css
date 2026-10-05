@@ -1,0 +1,53 @@
+.date-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-selector__option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  color: #6b7280;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.date-selector__option:hover {
+  border-color: #1b4f72;
+}
+
+.date-selector__option--checked {
+  border-color: #1b4f72;
+  background: rgba(27, 79, 114, 0.06);
+  color: #1b4f72;
+  font-weight: 600;
+}
+
+.date-selector__option input[type="checkbox"] {
+  accent-color: #1b4f72;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.date-selector__label {
+  white-space: nowrap;
+}
+
+.date-selector__date {
+  font-size: 12px;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.date-selector__option--checked .date-selector__date {
+  color: #1b4f72;
+  opacity: 0.7;
+}

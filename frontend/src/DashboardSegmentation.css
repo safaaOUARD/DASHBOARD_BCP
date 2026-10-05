@@ -1,0 +1,91 @@
+.dashboard-page {
+  --bcp-blue: #4A2E1D;
+  --bcp-orange: #e67e22;
+  --bcp-gray-bg:#F7F5F2;              
+  --bcp-text-muted: #6b7280;
+  --bcp-error: #b03a2e;
+
+  padding: 32px;
+  background: var(--bcp-gray-bg);
+  min-height: 100%;
+}
+
+.dashboard-page__header {
+  margin-bottom: 24px;
+}
+
+.dashboard-page__eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bcp-orange);
+  margin-bottom: 4px;
+}
+
+.dashboard-page__title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bcp-blue);
+}
+
+.dashboard-page__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+.dashboard-page__cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-page__status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  color: var(--bcp-text-muted);
+  font-size: 14px;
+}
+
+.dashboard-page__status--error {
+  color: var(--bcp-error);
+}
+
+.dashboard-page__retry {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--bcp-error);
+  background: transparent;
+  color: var(--bcp-error);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dashboard-page__retry:hover {
+  background: rgba(176, 58, 46, 0.06);
+}
+
+/* Desktop et tablette : 2 graphiques par ligne (déjà le cas par défaut) */
+@media (max-width: 1024px) {
+  .dashboard-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile : 1 graphique par ligne */
+@media (max-width: 640px) {
+  .dashboard-page {
+    padding: 16px;
+  }
+  .dashboard-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

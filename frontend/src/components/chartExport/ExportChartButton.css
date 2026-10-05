@@ -1,0 +1,36 @@
+.export-chart-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: inherit;
+  color: #1b4f72; /* --bcp-blue */
+  background: rgba(27, 79, 114, 0.06);
+  border: 1px solid rgba(27, 79, 114, 0.16);
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.export-chart-button:hover:not(:disabled) {
+  background: rgba(27, 79, 114, 0.12);
+  border-color: rgba(27, 79, 114, 0.28);
+}
+
+.export-chart-button:active:not(:disabled) {
+  background: rgba(27, 79, 114, 0.18);
+}
+
+.export-chart-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.export-chart-button__icon {
+  flex-shrink: 0;
+}

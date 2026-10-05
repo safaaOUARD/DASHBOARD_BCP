@@ -1,0 +1,17 @@
+# Environnements locaux (jamais utilisés par Docker, qui build depuis les Dockerfiles)
+venv/
+node_modules/
+
+# Secrets réels — seul .env.example reste versionné
+.env
+
+# Artefacts de build
+frontend/dist/
+**/__pycache__/
+*.pyc
+
+# Fichiers importés par les utilisateurs — données métier, jamais versionnées
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+.vscode/

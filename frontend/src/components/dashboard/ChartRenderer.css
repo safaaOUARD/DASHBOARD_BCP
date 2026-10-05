@@ -1,0 +1,36 @@
+.chart-renderer__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  color: #6b7280;
+  font-size: 14px;
+  text-align: center;
+}
+
+.chart-renderer__table-wrapper {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.chart-renderer__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.chart-renderer__table th {
+  text-align: left;
+  padding: 8px 10px;
+  background: #f9fafb;
+  color: #6b7280;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.chart-renderer__table td {
+  padding: 8px 10px;
+  border-top: 1px solid #f1f5f9;
+  color: #1f2937;
+}
